@@ -106,7 +106,6 @@ def add_task():
             "event_name": request.form.get("event_name"),
             "task_name": request.form.get("task_name"),
             "task_description": request.form.get("task_description"),
-            "is_urgent": is_urgent,
             "due_date": request.form.get("due_date"),
             "created_by": session["user"]
         }
@@ -121,12 +120,10 @@ def add_task():
 @app.route("/edit_task/<task_id>", methods=["GET", "POST"])
 def edit_task(task_id):
     if request.method == "POST":
-        is_urgent = "on" if request.form.get("is_urgent") else "off"
         submit = {
             "event_name": request.form.get("event_name"),
             "task_name": request.form.get("task_name"),
             "task_description": request.form.get("task_description"),
-            "is_urgent": is_urgent,
             "due_date": request.form.get("due_date"),
             "created_by": session["user"]
         }
