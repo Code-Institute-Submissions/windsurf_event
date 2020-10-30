@@ -102,7 +102,6 @@ def logout():
 @app.route("/add_task", methods=["GET", "POST"])
 def add_task():
     if request.method == "POST":
-        is_urgent = "on" if request.form.get("is_urgent") else "off"
         task = {
             "event_name": request.form.get("event_name"),
             "task_name": request.form.get("task_name"),
