@@ -104,7 +104,7 @@ def add_task():
     if request.method == "POST":
         is_urgent = "on" if request.form.get("is_urgent") else "off"
         task = {
-            "category_name": request.form.get("category_name"),
+            "event_name": request.form.get("event_name"),
             "task_name": request.form.get("task_name"),
             "task_description": request.form.get("task_description"),
             "is_urgent": is_urgent,
@@ -115,8 +115,8 @@ def add_task():
         flash("Task Successfully Added")
         return redirect(url_for("get_tasks"))
 
-    categories = mongo.db.categories.find().sort("category_name", 1)
-    return render_template("add_task.html", categories=categories)
+    events = mongo.db.events.find().sort("event_name", 1)
+    return render_template("add_task.html", events=events)
 
 
 @app.route("/edit_task/<task_id>", methods=["GET", "POST"])
@@ -124,7 +124,7 @@ def edit_task(task_id):
     if request.method == "POST":
         is_urgent = "on" if request.form.get("is_urgent") else "off"
         submit = {
-            "category_name": request.form.get("category_name"),
+            "event_name": request.form.get("event_name"),
             "task_name": request.form.get("task_name"),
             "task_description": request.form.get("task_description"),
             "is_urgent": is_urgent,
@@ -135,8 +135,8 @@ def edit_task(task_id):
         flash("Task Successfully Updated")
 
     task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
-    categories = mongo.db.categories.find().sort("category_name", 1)
-    return render_template("edit_task.html", task=task, categories=categories)
+    events = mongo.db.events.find().sort("event_name", 1)
+    return render_template("edit_task.html", task=task, events=events)
 
 
 @app.route("/delete_task/<task_id>")
@@ -146,44 +146,44 @@ def delete_task(task_id):
     return redirect(url_for("get_tasks"))
 
 
-@app.route("/get_categories")
-def get_categories():
-    categories = list(mongo.db.categories.find().sort("category_name", 1))
-    return render_template("categories.html", categories=categories)
+@app.route("/get_events")
+def get_events():
+    events = list(mongo.db.categories.find().sort("event_name", 1))
+    return render_template("event.html", events=events)
 
 
-@app.route("/add_category", methods=["GET", "POST"])
-def add_category():
+@app.route("/add_event", methods=["GET", "POST"])
+def add_event():
     if request.method == "POST":
-        category = {
-            "category_name": request.form.get("category_name")
+        event = {
+            "event_name": request.form.get("event_name")
         }
-        mongo.db.categories.insert_one(category)
-        flash("New Category Added")
-        return redirect(url_for("get_categories"))
+        mongo.db.events.insert_one(event)
+        flash("New Event Added")
+        return redirect(url_for("get_events"))
 
-    return render_template("add_category.html")
+    return render_template("add_event.html")
 
 
-@app.route("/edit_category/<category_id>", methods=["GET", "POST"])
-def edit_category(category_id):
+@app.route("/edit_event/<event_id>", methods=["GET", "POST"])
+def edit_event(event_id):
     if request.method == "POST":
         submit = {
-            "category_name": request.form.get("category_name")
+            "event_name": request.form.get("event_name")
         }
-        mongo.db.categories.update({"_id": ObjectId(category_id)}, submit)
-        flash("Category Successfully Updated")
-        return redirect(url_for("get_categories"))
+        mongo.db.events.update({"_id": ObjectId(event_id)}, submit)
+        flash("Event Successfully Updated")
+        return redirect(url_for("get_events"))
 
-    category = mongo.db.categories.find_one({"_id": ObjectId(category_id)})
-    return render_template("edit_category.html", category=category)
+    event = mongo.db.events.find_one({"_id": ObjectId(event_id)})
+    return render_template("edit_event.html", event=event)
 
 
-@app.route("/delete_category/<category_id>")
-def delete_category(category_id):
-    mongo.db.categories.remove({"_id": ObjectId(category_id)})
-    flash("Category Successfully Deleted")
-    return redirect(url_for("get_categories"))
+@app.route("/delete_event/<event_id>")
+def delete_event(event_id):
+    mongo.db.events.remove({"_id": ObjectId(event_id)})
+    flash("Event Successfully Deleted")
+    return redirect(url_for("get_events"))
 
 
 if __name__ == "__main__":
