@@ -5,21 +5,21 @@
 
     <div class="row card-panel grey lighten-5">
         <form class="col s12" method="POST" action="{{ url_for('edit_task', task_id=task._id) }}">
-            <!-- category selection -->
+            <!-- event selection -->
 			<div class="row">
 				<div class="input-field col s12">
                     <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
-					<select id="category_name" name="category_name" class="validate" required>
-                        <option value="" disabled>Choose Category</option>
-                        {% for category in categories %}
-                            {% if category.category_name == task.category_name %}
-                                <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
+					<select id="event_name" name="event_name" class="validate" required>
+                        <option value="" disabled>Choose Event</option>
+                        {% for event in events %}
+                            {% if event.events_name == task.event_name %}
+                                <option value="{{ event.event_name }}" selected>{{ event.event_name }}</option>
                             {% else %}
-                                <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                                <option value="{{ event.event_name }}">{{ event.event_name }}</option>
                             {% endif %}
                         {% endfor %}
                     </select>
-					<label for="category_name">Task Category</label>
+					<label for="event_name">Task Event</label>
 				</div>
 			</div>
             <!-- task name -->
