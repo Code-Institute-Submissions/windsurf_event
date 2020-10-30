@@ -15,7 +15,7 @@
 
 	<header>
         <!-- top navbar -->
-		<nav class="nav-extended text-shadow #e0e0e0 grey lighten-2 accent-1">
+		<nav class="nav-extended text-shadow light-blue darken-4">
 			<div class="nav-wrapper">
 				<a href="{{ url_for('get_tasks') }}" class="brand-logo">Windsurf Event Planner</a>
 				<a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
@@ -38,7 +38,7 @@
 
         <!-- mobile sidenav -->
 		<ul class="sidenav" id="mobile-demo">
-            <li><h4 class="center-align#e0e0e0 grey lighten-21">Task Manager</h4></li>
+            <li><h4 class="center-align light-blue darken-4">Task Manager</h4></li>
             <li><a href="{{ url_for('get_tasks') }}">Home</a></li>
             {% if session.user %}
                 <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
