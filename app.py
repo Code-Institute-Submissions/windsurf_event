@@ -158,7 +158,7 @@ def add_event():
         flash("New Event Added")
         return redirect(url_for("get_events"))
 
-    return render_template("add_event.html")
+    return render_template("add_events.html")
 
 
 @app.route("/edit_event/<event_id>", methods=["GET", "POST"])
