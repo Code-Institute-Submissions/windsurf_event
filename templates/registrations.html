@@ -4,24 +4,24 @@
     <h3 class="light-blue darken-4 accent-1 center-align">All Events</h3>
 
     <ul class="collapsible">
-        {% for task in registrations %}
+        {% for registration in registrations %}
         <li>
             <div class="collapsible-header white-text light-blue darken-4 text-shadow">
                 <div class="col s3">
                     <i class="fas fa-caret-down"></i>
-                    {% if session.user|lower == task.created_by|lower %}
-                        <a href="{{ url_for('delete_task', task_id=task._id) }}" class="btn-small green accent-4">Done</a>
-                        <a href="{{ url_for('edit_task', task_id=task._id) }}" class="btn-small light-blue lighten-1">Edit</a>
+                    {% if session.user|lower == registration.created_by|lower %}
+                        <a href="{{ url_for('delete_registration', registration_id=registration._id) }}" class="btn-small green accent-4">Done</a>
+                        <a href="{{ url_for('edit_registration', registration_id=registration._id) }}" class="btn-small light-blue lighten-1">Edit</a>
                     {% endif %}
                 </div>
                 <div class="col s9">
-                    <strong>{{ task.task_name }}</strong> : {{ task.due_date }}
+                    <strong>{{ registration.registration_name }}</strong>
                 </div>
             </div>
             <div class="collapsible-body">
-                <strong>{{ task.event_name }}</strong>
-                <p>{{ task.task_description }}</p>
-                <p><em>by: {{ task.created_by }}</em></p>
+                <strong>{{ registration.event_name }}</strong>
+                <p>{{ registration.registration_description }}</p>
+                <p><em>by: {{ registration.created_by }}</em></p>
             </div>
         </li>
         {% endfor %}
