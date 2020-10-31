@@ -145,7 +145,7 @@ def delete_task(task_id):
 @app.route("/get_events")
 def get_events():
     events = list(mongo.db.categories.find().sort("event_name", 1))
-    return render_template("event.html", events=events)
+    return render_template("events.html", events=events)
 
 
 @app.route("/add_event", methods=["GET", "POST"])
