@@ -99,44 +99,44 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/add_task", methods=["GET", "POST"])
-def add_task():
+@app.route("/add_registration", methods=["GET", "POST"])
+def add_registration():
     if request.method == "POST":
-        task = {
+        registration = {
             "event_name": request.form.get("event_name"),
-            "task_name": request.form.get("task_name"),
-            "task_description": request.form.get("task_description"),
+            "registration_name": request.form.get("registration_name"),
+            "registration_description": request.form.get("registration_description"),
             "created_by": session["user"]
         }
-        mongo.db.registrations.insert_one(task)
-        flash("Task Successfully Added")
+        mongo.db.registrations.insert_one(registration)
+        flash("Registration Successfully Added")
         return redirect(url_for("get_registrations"))
 
     events = mongo.db.events.find().sort("event_name", 1)
-    return render_template("add_task.html", events=events)
+    return render_template("add_registration.html", events=events)
 
 
-@app.route("/edit_task/<task_id>", methods=["GET", "POST"])
-def edit_task(task_id):
+@app.route("/edit_registration/<registration_id>", methods=["GET", "POST"])
+def edit_registration(registration_id):
     if request.method == "POST":
         submit = {
             "event_name": request.form.get("event_name"),
-            "task_name": request.form.get("task_name"),
-            "task_description": request.form.get("task_description"),
+            "registration_name": request.form.get("registration_name"),
+            "registration_description": request.form.get("registration_description"),
             "created_by": session["user"]
         }
-        mongo.db.registrations.update({"_id": ObjectId(task_id)}, submit)
-        flash("Task Successfully Updated")
+        mongo.db.registrations.update({"_id": ObjectId(registration_id)}, submit)
+        flash("Registration Successfully Updated")
 
-    task = mongo.db.registrations.find_one({"_id": ObjectId(task_id)})
+    registration = mongo.db.registrations.find_one({"_id": ObjectId(registration_id)})
     events = mongo.db.events.find().sort("event_name", 1)
-    return render_template("edit_task.html", task=task, events=events)
+    return render_template("edit_registration.html", registration=registration, events=events)
 
 
-@app.route("/delete_task/<task_id>")
-def delete_task(task_id):
-    mongo.db.registrations.remove({"_id": ObjectId(task_id)})
-    flash("Task Successfully Deleted")
+@app.route("/delete_registration/<registration_id>")
+def delete_registration(registration_id):
+    mongo.db.registrations.remove({"_id": ObjectId(registration_id)})
+    flash("Registration Successfully Deleted")
     return redirect(url_for("get_registrations"))
 
 
