@@ -105,7 +105,7 @@ def add_registration():
         registration = {
             "event_name": request.form.get("event_name"),
             "registration_name": request.form.get("registration_name"),
-            "registration_description": request.form.get("registration_description"),
+            "registration_comment": request.form.get("registration_comment"),
             "created_by": session["user"]
         }
         mongo.db.registrations.insert_one(registration)
@@ -122,7 +122,7 @@ def edit_registration(registration_id):
         submit = {
             "event_name": request.form.get("event_name"),
             "registration_name": request.form.get("registration_name"),
-            "registration_description": request.form.get("registration_description"),
+            "registration_comment": request.form.get("registration_comment"),
             "created_by": session["user"]
         }
         mongo.db.registrations.update({"_id": ObjectId(registration_id)}, submit)
@@ -184,4 +184,3 @@ if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=True)
-            
