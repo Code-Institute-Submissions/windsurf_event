@@ -144,7 +144,7 @@ def delete_registration(registration_id):
 
 @app.route("/get_events")
 def get_events():
-    events = list(mongo.db.categories.find().sort("event_name", 1))
+    events = list(mongo.db.events.find().sort("event_name", 1))
     return render_template("events.html", events=events)
 
 
