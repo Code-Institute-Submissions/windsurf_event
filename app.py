@@ -107,6 +107,7 @@ def add_registration():
             "registration_name": request.form.get("registration_name"),
             "email": request.form.get("email"),
             "gender": request.form.get("gender"),
+            "birthday": request.form.get("birthday"),
             "registration_comment": request.form.get("registration_comment"),
             "created_by": session["user"]
         }
@@ -126,6 +127,7 @@ def edit_registration(registration_id):
             "registration_name": request.form.get("registration_name"),
             "email": request.form.get("email"),
             "gender": request.form.get("gender"),
+            "birthday": request.form.get("birthday"),
             "registration_comment": request.form.get("registration_comment"),
             "created_by": session["user"]
         }
