@@ -105,9 +105,7 @@ def add_registration():
         registration = {
             "event_name": request.form.get("event_name"),
             "registration_name": request.form.get("registration_name"),
-            "email": request.form.get("email"),
-            "male": request.form.get("male"),
-            "female": request.form.get("female"),
+            "gender": request.form.get("gender"),
             "registration_comment": request.form.get("registration_comment"),
             "created_by": session["user"]
         }
@@ -126,8 +124,7 @@ def edit_registration(registration_id):
             "event_name": request.form.get("event_name"),
             "registration_name": request.form.get("registration_name"),
             "email": request.form.get("email"),
-            "male": request.form.get("male"),
-            "female": request.form.get("female"),
+            "gender": request.form.get("gender"),
             "registration_comment": request.form.get("registration_comment"),
             "created_by": session["user"]
         }
