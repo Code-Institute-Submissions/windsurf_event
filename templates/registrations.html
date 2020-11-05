@@ -18,11 +18,11 @@
                 </div>
             </div>
             <div class="collapsible-body">
-                <p>{{ registration.email }}</p>
-                <p>{{ registration.gender }}</p>
-                <p>{{ registration.birthday }}</p>
-                <p>{{ registration.registration_comment }}</p>
-                <p><em>by: {{ registration.created_by }}</em></p>
+                <p><label>Email&nbsp</label>{{ registration.email }}</p>
+                <p><label>Gender&nbsp</label>{{ registration.gender }}</p>
+                <p><label>Birthday&nbsp</label>{{ registration.birthday }}</p>
+                <p><label>Comment&nbsp</label>{{ registration.registration_comment }}</p>
+                <p><label>Username&nbsp</label>{{ registration.created_by }}</p>
             </div>
         </li>
         {% endfor %}
