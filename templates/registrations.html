@@ -23,7 +23,7 @@
                 <p><label>Comment&nbsp</label>{{ registration.registration_comment }}</p>
                 <p><label>Username&nbsp</label>{{ registration.created_by }}</p>
                     {% if session.user|lower == registration.created_by|lower %}
-                        <a href="{{ url_for('delete_registration', registration_id=registration._id) }}" class="btn-small red">Cancel</a>
+                        <a href="{{ url_for('delete_registration', registration_id=registration._id) }}" class="btn-small red">Cancel Event</a>
                     {% endif %}
             </div>
         </li>
