@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="#00acc1 cyan darken-1 center-align">Add Event</h3>
+    <h3 class="#00acc1 cyan darken-1 center-align">Register Event</h3>
 
-    <div class="row card-panel grey lighten-5">
+    <div class="row card-panel #efebe9 brown lighten-5">
         <form class="col s12" method="POST" action="{{ url_for('add_registration') }}">
             <!-- event selection -->
 			<div class="row">
@@ -66,8 +66,8 @@
             <!-- submit button -->
           <div class="row">
                 <div class="col s12 center-align">
-                    <button type="submit" class="btn-large light-blue darken-1 text-shadow">
-                        Add Task <i class="fas fa-plus-square right"></i>
+                    <button type="submit" class="btn-large 00acc1 cyan darken-1 text-shadow">
+                        Register Event <i class="fas fa-plus-square right"></i>
                     </button>
                 </div>
             </div>
