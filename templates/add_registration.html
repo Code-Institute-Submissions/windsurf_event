@@ -8,7 +8,7 @@
             <!-- event selection -->
 			<div class="row">
 				<div class="input-field col s12">
-                    <i class="fas fa-plus-circle prefix green-text"></i>
+                    <i class="fas fa-plus-circle prefix cyan-text"></i>
 					<select id="event_name" name="event_name" class="validate" required>
                         <option value="" disabled selected>Choose Event</option>
                         {% for event in events %}
@@ -21,7 +21,7 @@
             <!-- registration name -->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-pencil-alt prefix green-text"></i>
+                    <i class="fas fa-pencil-alt prefix cyan-text"></i>
                     <input id="registration_name" name="registration_name" minlength="2" maxlength="20"
                         type="text" class="validate" required>
                     <label for="registration_name">Registration Name</label>
@@ -30,7 +30,7 @@
             <!-- registration email -->
             <div class = "row">  
                <div class = "input-field col s12">
-                  <i class="fas fa-at prefix green-text"></i>
+                  <i class="fas fa-at prefix cyan-text"></i>
                   <input id="Email" name="email" type="email" class = "validate" minlength="5" maxlength="40" required>
                   <label for="email">Email</label>
                </div>  
@@ -49,14 +49,15 @@
             <!-- registration birthday -->
             <div class = "row">
             <div class="input-field col s3">
-                    <i class="fas fa-birthday-cake prefix green-text"></i>                         
+                    <i class="fas fa-birthday-cake prefix cyan-text"></i>                         
             <input name="birthday" type = "date" class = "datepicker" />    
             <label for="bdate">Birthday</label>
-            </div>                
+            </div>     
+            </div>          
             <!-- registration comment -->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="far fa-comment prefix green-text"></i>
+                    <i class="far fa-comment prefix cyan-text"></i>
                     <textarea id="registration_comment" name="registration_comment" minlength="0"
                         maxlength="150" class="materialize-textarea validate"></textarea>
                     <label for="registration_comment">Registration Comment</label>

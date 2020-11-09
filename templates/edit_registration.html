@@ -8,7 +8,7 @@
             <!-- event selection -->
 			<div class="row">
 				<div class="input-field col s12">
-                    <i class="fas fa-plus-circle prefix green-text"></i>
+                    <i class="fas fa-plus-circle prefix cyan-text"></i>
 					<select id="event_name" name="event_name" class="validate" required>
                         <option value="" disabled>Choose Event</option>
                         {% for event in events %}
@@ -25,7 +25,7 @@
             <!-- registration name -->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-pencil-alt prefix green-text"></i>
+                    <i class="fas fa-pencil-alt prefix cyan-text"></i>
                     <input id="registration_name" name="registration_name" minlength="2" maxlength="20"
                         value="{{ registration.registration_name }}" type="text" class="validate" required>
                     <label for="registration_name">Registration Name</label>
@@ -34,7 +34,7 @@
             <!-- registration email -->
             <div class = "row">  
                <div class = "input-field col s12">
-                  <i class="fas fa-at prefix green-text"></i>
+                  <i class="fas fa-at prefix cyan-text"></i>
                   <input id="Email" name="email" minlength="5" maxlength="40"
                     value="{{ registration.email }}" type="email" class="validate" required>
                   <label for = "email">Email</label>  
@@ -54,14 +54,15 @@
             <!-- registration birthday -->
             <div class = "row">
             <div class="input-field col s3">
-                    <i class="fas fa-birthday-cake prefix green-text"></i>                         
+                    <i class="fas fa-birthday-cake prefix cyan-text"></i>                         
             <input name="birthday" value="{{ registration.birthday }}" type="date" class = "datepicker" />    
             <label for="bdate">Birthday</label>
+            </div>
             </div>
             <!-- registration comment -->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="far fa-comment prefix green-text"></i>
+                    <i class="far fa-comment prefix cyan-text"></i>
                     <textarea id="registration_comment" name="registration_comment" minlength="5"
                         maxlength="200" class="materialize-textarea validate" required>
                         {{- registration.registration_comment -}}
@@ -76,7 +77,7 @@
                     <a href="{{ url_for('get_registrations') }}" class="btn-large red text-shadow">
                         Cancel <i class="fas fa-times-circle right"></i>
                     </a>
-                    <button type="submit" class="btn-large light-blue darken-1 text-shadow">
+                    <button type="submit" class="btn-large #00acc1 cyan darken-1 text-shadow">
                         Edit Registration <i class="fas fa-edit right"></i>
                     </button>
                 </div>
