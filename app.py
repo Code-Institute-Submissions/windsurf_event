@@ -21,7 +21,7 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/get_registrations")
 def get_registrations():
-    registrations = list(mongo.db.registrations.find())
+    registrations = list(mongo.db.registrations.find().sort("event_name"))
     return render_template("registrations.html", registrations=registrations)
 
 

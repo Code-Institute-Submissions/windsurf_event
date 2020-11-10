@@ -12,7 +12,7 @@
 					<select id="event_name" name="event_name" class="validate" required>
                         <option value="" disabled>Choose Event</option>
                         {% for event in events %}
-                            {% if event.events_name == registration.event_name %}
+                            {% if event.event_name == registration.event_name %}
                                 <option value="{{ event.event_name }}" selected>{{ event.event_name }}</option>
                             {% else %}
                                 <option value="{{ event.event_name }}">{{ event.event_name }}</option>
