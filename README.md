@@ -1,8 +1,8 @@
-Online Cookbook - Data Centric Development Milestone Project
+Surf Event planner - Data Centric Development Milestone Project
 ======================================
-**Online Cookbook Project - Milestone Project 3 for the Code Institute**
+**Surf Event Planner- Milestone Project 3 for the Code Institute**
 
-This [project](https://deevdz-milestone-3.herokuapp.com/) was designed and developed to be an online recipe cookbook for users. Users can browse and rate recipes listed. Users also have the option to create their own account where they can add, edit and delete their own recipes.
+This [project](https://windsurf-event.herokuapp.com//) was designed and developed to be an online recipe cookbook for users. Users can browse and rate recipes listed. Users also have the option to create their own account where they can add, edit and delete their own recipes.
 
 The project needs to be able to demonstrate the use of CRUD functions:
 ```
