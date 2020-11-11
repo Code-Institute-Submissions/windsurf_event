@@ -152,13 +152,7 @@ Following steps were taken to deploy the website:
 - Database and Tables were created in an Atlas MongoDB 
 - Project workspace was created in GitHub. 
 - In the GitHub workspace i make the env.py file to make a secure environment.
-import os
-
-os.environ.setdefault("IP", "0.0.0.0")
-os.environ.setdefault("PORT", "5000")
-os.environ.setdefault("SECRET_KEY", "XXXXXXXXXXXXXX")
-os.environ.setdefault("MONGO_URI", "mongodb+srv://root:XXXXXXXXXXXXXX@myfirstcluster.fijdo.mongodb.net/windsurf?retryWrites=true&w=majority")
-os.environ.setdefault("MONGO_DBNAME", "windsurf")
+- 
 
 4. Flask was installed - `sudo pip install flask`.
 3. Setup app.py file and imported flask and os - `from flask import Flask. import os`
