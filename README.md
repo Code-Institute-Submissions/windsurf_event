@@ -150,7 +150,8 @@ Heroku App Location is as follows [http://windsurf-event.herokuapp.com/](http://
 
 Following steps were taken to deploy the website:
 1. Database and Tables were created in an Atlas MongoDB account
-2. Project workspace was created in Cloud 9. In this workspace: Flask was installed - `sudo pip install flask`.
+2. Project workspace was created in GitHub. In this workspace: Flask was installed - `sudo pip install flask`.
+
 3. Setup app.py file and imported flask and os - `from flask import Flask. import os`
 4. Created an instance of flask - `app = flask(__name__)`
 5. Tested the connection as proof of concept. `CLI - show collections` (prove connection)
@@ -170,7 +171,7 @@ Following steps were taken to deploy the website:
 19. Add DB connection code to app.py - edit bashrc file to keep details private.
 20. Test connection to DB again to confirm it's working
 21. Confirm that the cloud9 runner is set to python 3
-22. Connect GitHub repository to Heroku using code provided by heroku and github.
+22. Connect GitHub repository to Heroku.
 23. Set Debug to False
 
 Credits
