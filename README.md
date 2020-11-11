@@ -70,7 +70,6 @@ The website is designed using following technologies:
   * [CSS](https://en.wikipedia.org/wiki/CSS)
   * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
   * [Python](https://www.python.org/)
-  * [Flask](http://flask.pocoo.org/)
   * [Mongodb](https://www.mongodb.com/)
   * [Jquery](https://code.jquery.com/jquery-3.5.1.js)
   * [Font Awesome library](https://fontawesome.com/)
