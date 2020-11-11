@@ -1,6 +1,6 @@
-Surf Event planner - Data Centric Development Milestone Project
+Surf Event planner - Milestone Project 3
 ======================================
-**Surf Event Planner- Milestone Project 3 for the Code Institute**
+**Surf Event Planner- Code Institute Milestone Project 3**
 
 This [project](https://windsurf-event.herokuapp.com//) was designed and developed to be an online recipe cookbook for users. Users can browse and rate recipes listed. Users also have the option to create their own account where they can add, edit and delete their own recipes.
 
@@ -58,11 +58,9 @@ Visitors have the option of create an account. Information required to create an
 
 When a visitor has created an account and logged in they are given the option to register for a surf event, Edit their own registered surf event, Delete their registered surf event from the database.
 
-Adding a new surf event will create a new document in the recipe collection using the required fields.. The user has the option to feature this recipe on the homepage slider and adding tags to the recipe to allow visitors to easily filter through the recipes on the site.
+Adding a new surf event is only allowed by admin users.
 
-A user has the option to edit or delete a recipe that they have added to the site only. Editing the recipe allows the user to update/or add to the existing recipe information. Deleting the recipe permanently removes the recipe from the system.
-
-Any recipe can be rated once by a logged in user. Users can choose between a rating of 1 to 5. Calculating the weighted value of the recipe rating was based on the [following formula](https://stackoverflow.com/questions/10196579/algorithm-used-to-calculate-5-star-ratings/38378697). Each rating is accounted for and the visitor is informed of the user rating and how many times this recipe has been rated.
+A user has the option to edit or delete a surf event that they have added to the site only.
 
 The site features custom error pages for both 404 and 500 errors.
 
