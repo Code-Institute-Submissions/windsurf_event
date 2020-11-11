@@ -85,7 +85,8 @@ The website is designed using following technologies:
 Testing
 -----------------------------------------
 **Testing:**
-Tests were established to verify writing to the database and removing from the database i.e. Adding a user to the database and then removing the user and deleting a recipe from the database.
+Tests were established to verify writing to the database and removing from the database i.e. Adding a user to the database.
+Also adding, deleting and editing surf events by admin users. Adding, deleting, editing registered surf events from the database as a registered user.
 
 **Responsiveness Testing:**
 Aandroid mobile phone and Apple tablet were used to test the appearance of website on mobile/tablet screen size. 
