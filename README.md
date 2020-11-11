@@ -36,20 +36,15 @@ Research was carried out on complimentary fonts and Libre Baskerville and Monste
 
 ##### User Stories
   * As a user - I am immediately aware what the nature of the site is and its purpose
-  * As a user - I can navigate through the recipes by various means i.e. Feature Slider, Navigation dropdown
+  * As a user - I can navigate through the surf event by various means i.e. Navigation dropdown
   * As a user - I can browse the site without being a logged in user
   * As a user - I can create a user profile, and log in and out
-  * As a user - I can add, edit and delete my own recipes through my user account
-  * As a user - I can rate a recipe once, as long as I am logged in user
+  * As a user - I can add, edit and delete my own surf events through my user account
   * As a user - I receive an error message if I am unable to login or register
   * As a user - I am able to access the site on mobile or tablet and have a similar experience as a desktop device
-  * As a user - I can search for a recipe to filter my results
-  * As a user - I can filter recipes based on recipe tags
-  * As a user - I am able to see the total number of recipes in a category
-  * As a user - I am able to see the details of the recipe
-  * As a user - I am prompted to sign up or add a recipe if a category is empty
-  * As a user - I am able to page through categories if there are more than 6 results.
-
+  * As a user - I register for a surf event
+  * As a user - I am able to see all registerd surf event attendees
+  * As a user - I am able to see the details the registered event
 
 Features
 -----------------------------------------
@@ -57,15 +52,13 @@ Features
 
 The site can be used as a guest or as a logged in user, however, some features are only available to logged in users.
 
-Any visitor to the site can view the featured recipes in the homepage slider, use the navigation to filter through recipe categories, search for specific keywords and use the tags to filter recipes. The search function at present only returns results with the keyword appearing in either recipe name, ingredients or recipe category.
-
-All visitors can browse all recipes. Results are returned in order of newest recipe added to the site. From the results a specific recipe page can be viewed. Six recipes are displayed per page. Where a page has more than six recipes to display pagination options appear. Visitors are informed as to how many recipes are in each category and how many pages of results there are.
+Any visitor to the site can view the registered surf events at the home page.
 
 Visitors have the option of create an account. Information required to create an account is Full Name, Username (which must be unique) and password. This information is stored in the users collection. The Full Name and Username are stored as plain text but the password is stored in a hashed format.
 
-When a visitor has created an account and logged in they are given the option to Add a recipe to the system, Edit their recipes, Delete their recipe from the system and rate any recipe on the site. Users can view recipes they have added to the site in the My Recipes section.
+When a visitor has created an account and logged in they are given the option to register for a surf event, Edit their own registered surf event, Delete their registered surf event from the database.
 
-Adding a new recipe will create a new document in the recipe collection using the required fields.. The user has the option to feature this recipe on the homepage slider and adding tags to the recipe to allow visitors to easily filter through the recipes on the site.
+Adding a new surf event will create a new document in the recipe collection using the required fields.. The user has the option to feature this recipe on the homepage slider and adding tags to the recipe to allow visitors to easily filter through the recipes on the site.
 
 A user has the option to edit or delete a recipe that they have added to the site only. Editing the recipe allows the user to update/or add to the existing recipe information. Deleting the recipe permanently removes the recipe from the system.
 
