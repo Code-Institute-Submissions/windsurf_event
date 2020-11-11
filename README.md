@@ -66,9 +66,9 @@ Technologies Used
 -----------------------------------------
 The website is designed using following technologies:
 
-  * HTML
-  * CSS
-  * JavaScript
+  * [HTML](https://en.wikipedia.org/wiki/HTML)
+  * [CSS](https://en.wikipedia.org/wiki/CSS)
+  * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
   * [Python](https://www.python.org/)
   * [Flask](http://flask.pocoo.org/)
   * [Mongodb](https://www.mongodb.com/)
