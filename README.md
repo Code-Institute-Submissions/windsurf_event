@@ -135,18 +135,18 @@ Manual tests were carried out and the testing process was as follows:
 
 ###### Login Page
 + Confirm that the login link brings the user to the login page
-+ If user enters an incorrect username then they will receive the following message "User *** cannot be found on our system. Please try again. "
++ If user enters an incorrect username then they will receive a error message.
 + If user enters a correct username but an incorrect password they will receive a message that you need a give in your password.
 + If the user enters the correct login details they are brought to the profile page with a welcome message. You see welcome "username" Navigation changes with the option Logout.
 
 ###### Logout
-+ Verified that the user is returned to the homepage and logged out of the system. 
++ Verified that the user is returned to the login page and logged out of the system. 
 
 Deployment
 -----------------------------------------
-Deployment and source control was carried out via GitHub and Heroku. The repository location is as follows:[https://github.com/deevdz/milestone-project-3](https://github.com/deevdz/milestone-project-3)
+Deployment and source control was carried out via GitHub and Heroku. The repository location is as follows:[https://github.com/remcokes/windsurf_event/](https://github.com/remcokes/windsurf_event/)
 
-Heroku App Location is as follows [https://deevdz-milestone-3.herokuapp.com/](https://deevdz-milestone-3.herokuapp.com/)
+Heroku App Location is as follows [http://windsurf-event.herokuapp.com/](http://windsurf-event.herokuapp.com/)
 
 Following steps were taken to deploy the website:
 1. Database and Tables were created in an Atlas MongoDB account
