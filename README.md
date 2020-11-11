@@ -84,19 +84,12 @@ The website is designed using following technologies:
 
 Testing
 -----------------------------------------
-**Automated Testing:**
-
-Using pythons built-in [Unit Test Framework](https://docs.python.org/3/library/unittest.html), automated tests were carried out on routes and forms. A testcase was created by subclassing unittest.TestCase.
-
-The [test suite](https://github.com/deevdz/milestone-project-3/blob/master/tests/tests.py) was started with a Setup() and ended with a TearDown() in accordance with the [Ordering Test Code](https://docs.python.org/3/library/unittest.html#organizing-test-code) suggested in the Unit Test Framework.
-
-Automated tests were setup and asserted that all routes behaved as expected i.e 200 - route ok, 404 - route not found.
-
+**Testing:**
 Tests were established to verify writing to the database and removing from the database i.e. Adding a user to the database and then removing the user and deleting a recipe from the database.
 
 **Responsiveness Testing:**
-
-Developer Tools, android mobile phone and android tablet were used to test the appearance of website on mobile/tablet screen size.  
+Aandroid mobile phone and Apple tablet were used to test the appearance of website on mobile/tablet screen size. 
+Also the Google Chrome developer tool where used to test the mobile appearance of the website on different devices. 
    
 **User Testing:**
 
@@ -104,23 +97,32 @@ Manual tests were carried out and the testing process was as follows:
 
 **Homepage**
  + Click on logo or Home and verify that home page appears.
- + Click on Recipes dropdown - verify all categories are loading as options with links to the correct categories
+ + See the on registered events and the pull down menu for the details of the participant of the registered event
  + If visitor is not logged in “Login” should be displayed in the navigation and clicking this link will bring you to the login page.
- + If visitor is logged in the navigation should read “Account” with dropdown links to Add recipe, My Recipes and Logout. Also should display the correct Username.
- + Search Button - click to open full screen overlay search box.
- + Ensure slider displaying correct recipes, links to recipes going to correct pages and arrows on slider working
- + “You may also be interested in” should display the four newest recipes added to the site with links to the individual recipes.
- + Clicking on the “Browse All Recipes” button brings you to the All recipes page.
- + Confirmed that the right side category links link to the correct pages
- + Verify that 20 tags are being loaded on the right side of the page with links going to search results of that tag.
+ + If visitor is logged in the navigation should have Home, Profile, Plan Event and Log Out. 
+ + If visitor is logged in you see a "edit"button for editing your own registered event
+ + If visitor is logged you see a "edit"button for editing your own registered event
+ + If visitor is logged you see a in the pull down menu the details of the participant of the registered event you will see email,gender,birthday, comment username.
+ + If visitor is logged you see a in the pull down menu the details of the participant of the registered event you have the option to cencel the event.
+ + Ensure slider displaying correct recipes, links to recipes going to correct pages and arrows on slider working.
  + Confirmed that the social links in the footer open in a new browser window and go to the correct links
 
-**Category Pages**
- + Click through to each category page and confirmed that the correct header and recipes were displaying
- + Confirmed that if there were no recipes to display user is prompted to either log in and add a recipe or if already logged in to just add a recipe.
- + Confirmed that if less than six recipes were displayed that the pagination is hidden
- + Confirmed that the pagination is working correctly when there are more than 6 recipes to display
- + Verified that clicking on a recipe brings the user to the correct detailed recipe page.
+**Profile**
+
+ + Confirmed that you see the correct username
+ + If visitor is logged in the navigation should have Home, Profile, Plan Event and Log Out
+ + Confirmed that you see the windsurfing picture
+ + Confirmed that the social links in the footer open in a new browser window and go to the correct links
+ 
+ 
+**Plan Event**
+ + Confirmed that you see the option to plan an event
+ + Confirmed that you see an event pull down menu where you can choose your event
+ + Confirmed that you see an option to register your name
+ + Confirmed that you see an option to register your email address
+ + Confirmed that you see radio buttons to select your male of female gender
+ + Confirmed that you see a birthday picker to select your birthday
+ + Confirmed that you see a comment field to give comment
 
 **User Account**
 
