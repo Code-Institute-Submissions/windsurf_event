@@ -62,21 +62,6 @@ Adding a new surf event is only allowed by admin users.
 
 A user has the option to edit or delete a surf event that they have added to the site only.
 
-##### Future Features
-
-**Images** - could be improved by letting the user to upload an image from their computer. Also a gallery of images for a dish would be a nice feature.
-
-**Reviews/Comments** - Expand the ratings system to allow users to leave a detailed review/comment about a recipe.
-
-**User accounts** - Passwords are currently stored in a hash format but it is an important requirement to make sure that user logins are made more secure.
-
-**User Dashboard** - A dashboard where the user could update their details including password.
-
-**Following** - A feature for users to able to follow other users on the site and receive updates on their dashboard when users add new recipes.
-
-**Undo Delete** - Provide users with an archive of deleted recipes with the option to add the recipe back onto the system
-
-
 Technologies Used
 -----------------------------------------
 The website is designed using following technologies:
