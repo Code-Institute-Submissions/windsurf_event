@@ -74,9 +74,13 @@ The website is designed using following technologies:
   * [Mongodb](https://www.mongodb.com/)
   * [Jquery](https://code.jquery.com/jquery-3.5.1.js)
   * [Font Awesome library](https://fontawesome.com/)
-  * [Materializecss 0.100.2](http://archives.materializecss.com/0.100.2/)
-  * [Google Fonts](https://fonts.google.com/)
-  * [UIkit](https://getuikit.com/)
+  * [Materializecss](http://https://materializecss.com/)
+  * [dnspython 2.0.0](https://pypi.org/project/dnspython/)
+  * [Flask 1.1.2](https://pypi.org/project/Flask/)
+  * [Flask_PyMongo 2.3.0](https://pypi.org/project/Flask-PyMongo/)
+  * [itsdangerous 1.1.0](https://pypi.org/project/itsdangerous/)
+  * [pymongo 3.11.0](https://pypi.org/project/pymongo/)
+  * [Werkzeug 1.0.1](https://pypi.org/project/Werkzeug/)
 
 
 Testing
