@@ -72,7 +72,7 @@ The website is designed using following technologies:
   * [Python](https://www.python.org/)
   * [Flask](http://flask.pocoo.org/)
   * [Mongodb](https://www.mongodb.com/)
-  * [Jquery](https://code.jquery.com/jquery-3.2.1.js)
+  * [Jquery](https://code.jquery.com/jquery-3.5.1.js)
   * [Font Awesome library](https://fontawesome.com/)
   * [Materializecss 0.100.2](http://archives.materializecss.com/0.100.2/)
   * [Google Fonts](https://fonts.google.com/)
