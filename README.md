@@ -44,7 +44,7 @@ Research was carried out on complimentary fonts and Libre Baskerville and Monste
   * As a user - I am able to access the site on mobile or tablet and have a similar experience as a desktop device
   * As a user - I register for a surf event
   * As a user - I am able to see all registerd surf event attendees
-  * As a user - I am able to see the details the registered event
+  * As a user - I am able to see the details for the registered event
 
 Features
 -----------------------------------------
@@ -54,15 +54,13 @@ The site can be used as a guest or as a logged in user, however, some features a
 
 Any visitor to the site can view the registered surf events at the home page.
 
-Visitors have the option of create an account. Information required to create an account is Full Name, Username (which must be unique) and password. This information is stored in the users collection. The Full Name and Username are stored as plain text but the password is stored in a hashed format.
+Visitors have the option of create an account. Information required to create an account is Username (which must be unique) and password. This information is stored in the users collection. The Username are stored as plain text but the password is stored in a hashed format.
 
 When a visitor has created an account and logged in they are given the option to register for a surf event, Edit their own registered surf event, Delete their registered surf event from the database.
 
 Adding a new surf event is only allowed by admin users.
 
 A user has the option to edit or delete a surf event that they have added to the site only.
-
-The site features custom error pages for both 404 and 500 errors.
 
 ##### Future Features
 
