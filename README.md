@@ -130,64 +130,16 @@ Manual tests were carried out and the testing process was as follows:
 + Confirmed that clicking on the sign up link brings the user to the registration page
 + All fields are required on the registration form
 + Tested registering successfully and was returned to the homepage as a logged in user with a welcome message.
-+ Confirmed that username must be unique - if user tries to register with a username that already exists the following message appears "Username already exists, please try again."
++ Confirmed that username must be unique
 
 ###### Login Page
 + Confirm that the login link brings the user to the login page
 + If user enters an incorrect username then they will receive the following message "User *** cannot be found on our system. Please try again. "
-+ If user enters a correct username but an incorrect password they will receive the following message "Incorrect Password, please try again."
-+ If the user enters the correct login details they are brought to the homepage with a welcome message. Navigation changes from Login to Account dropdown with option to Add Recipe, View Recipes and Logout.
-
-###### Add Recipe
-+ User can only add a recipe if they are logged in. If user finds this page without being logged in they are prompted to do so.
-+ Confirmed that all fields are required fields except for allergens.
-+ Confirmed that recipe is added correctly to the system by seeing it displayed on the site.
-
-###### Edit Recipe
-+ User can only edit a recipe if they are logged in and they have added the recipe to the site. If user finds this page without being logged in they are prompted to do so. 
-+ Confirmed that this page is working by clicking on the edit button and seeing the results that are returned.
-+ Verify that the edit recipe is working correctly by making a change to the recipe and updating it.
-
-###### Delete Recipe
-+ On the Recipe page, verified that the delete button is only displayed to the logged in user that added that recipe to the system.
-+ Confirmed that the recipe is deleted from the system by checking the Database.
-
-###### My Recipes
-+ Confirm that only recipes added by the user are displayed here
-+ Confirm that the user can only see this page once logged in.
-+ Confirm that pagination is displayed when user has more than 6 recipes added.
++ If user enters a correct username but an incorrect password they will receive a message that you need a give in your password.
++ If the user enters the correct login details they are brought to the profile page with a welcome message. You see welcome "username" Navigation changes with the option Logout.
 
 ###### Logout
-+ Verified that the user is returned to the homepage and logged out of the system.
-
-**Recipe Page**
-+ Confirm that clicking on a recipe link, ie through the slider, category cards brings the user to a detailed version of the recipe.
-+ Verified that the correct details are being displayed in the correct positions for each recipe.
-+ Checked that the social share links are working correctly.
-+ Confirmed that the user rating is displaying correctly.
-+ User must be logged in to rate a recipe. User is prompted to login if they are not. If the user is logged in they are prompted to rate the recipe. If the user has previously rated the recipe they are not given the option to rate it again.
-+ Verified that the recipe tags are working correctly. 
-
-**Search by Keyword**
-+ Enter a value into the search form and confirm that the correct results are returned with paginaition where applicable.
-+ Confirmed Search box is a required field.
-+ Confirmed that clicking anywhere on the screen closes the search overlay.
-
-**Serach by Tag**
-+ Click on a tag link and confirm that the correct results are returned for the tag clicked and results are displayed with pagination where applicable.
-
-**Error Pages**
- + Try going to [http://deevdz-milestone-3.herokuapp.com/test](http://deevdz-milestone-3.herokuapp.com/test) and observe the custom 404 error.
- + Confirmed that there was a working link back to the homepage and that links in the navigation are working on the 404 error page.
-
-**Issues Found & Fixes Implemented**
-- Issue: Homepage slider area would display even if no recipe had the featured recipe switched on. Fix: Count the number of recipes that have the feature switched on if it is less than one then hide the area.
-- Issue: Duplicates of the tags were displaying and the same tags were displaying each time the page loaded. Fix: Used the distinct function solve this issue and then used the shuffle function to randomise the order.
-- Issue: Could not get the links to work on the materialize Homepage slider. Fix: Now using the slider provided by UIKit as it had the functionality required.
-- Issue: Recipes being displayed on the wrong author page. Fix: Made the recipes group by Username rather than Author Name as username has to be unique.
-- Issue: Being logged out of the session too quickly. Fix: Found a fix to the issue [here](https://stackoverflow.com/questions/18662558/flask-login-session-times-out-too-soon)
-- Issue: Adding tags through a form using Materialize chips. Fix: Found a fix here as how to bind the chips to a hidden input field [here](https://stackoverflow.com/questions/42253115/symfony-best-practice-using-materialize-css-chips-with-symfony-forms?rq=1)
-- Issue: Javascript error from the code used to bind the materialize chips to the hidden input field. Fix: Check the page to see if the class exists then execute the code otherwise ignore it. 
++ Verified that the user is returned to the homepage and logged out of the system. 
 
 Deployment
 -----------------------------------------
