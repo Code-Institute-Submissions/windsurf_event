@@ -149,9 +149,18 @@ Deployment and source control was carried out via GitHub and Heroku. The reposit
 Heroku App Location is as follows [http://windsurf-event.herokuapp.com/](http://windsurf-event.herokuapp.com/)
 
 Following steps were taken to deploy the website:
-1. Database and Tables were created in an Atlas MongoDB account
-2. Project workspace was created in GitHub. In this workspace: Flask was installed - `sudo pip install flask`.
+- Database and Tables were created in an Atlas MongoDB 
+- Project workspace was created in GitHub. 
+- In the GitHub workspace i make the env.py file to make a secure environment.
+import os
 
+os.environ.setdefault("IP", "0.0.0.0")
+os.environ.setdefault("PORT", "5000")
+os.environ.setdefault("SECRET_KEY", "XXXXXXXXXXXXXX")
+os.environ.setdefault("MONGO_URI", "mongodb+srv://root:XXXXXXXXXXXXXX@myfirstcluster.fijdo.mongodb.net/windsurf?retryWrites=true&w=majority")
+os.environ.setdefault("MONGO_DBNAME", "windsurf")
+
+4. Flask was installed - `sudo pip install flask`.
 3. Setup app.py file and imported flask and os - `from flask import Flask. import os`
 4. Created an instance of flask - `app = flask(__name__)`
 5. Tested the connection as proof of concept. `CLI - show collections` (prove connection)
@@ -174,31 +183,6 @@ Following steps were taken to deploy the website:
 22. Connect GitHub repository to Heroku.
 23. Set Debug to False
 
-Credits
------------------------------------------
-**Content**
-
-All site recipes and images are sourced from [BBC Food](https://www.bbc.com/food/recipes) and [Pinterest](https://www.pinterest.ie/).
-
-**Code References**
-
-  * [Full screen search overlay](https://codepen.io/thisisabhinay/pen/MypbGK)  
-  * [Formula for calculating user ratings](https://stackoverflow.com/questions/10196579/algorithm-used-to-calculate-5-star-ratings/38378697)  
-  * [Issues with for loops](https://stackoverflow.com/questions/34877236/for-loop-not-working-in-jinja-flask)
-  * [Star Ratings CSS](https://codepen.io/Bluetidepro/pen/GkpEa)
-  * [Share Links](https://sharingbuttons.io/)
-  * [Splitting Tag List to create array](https://pynative.com/python-accept-list-input-from-user/)
-  * [Taking input Using Materialize Chips](https://stackoverflow.com/questions/42253115/symfony-best-practice-using-materialize-css-chips-with-symfony-forms?rq=1)
-  * [Information on Logging In](https://pythonspot.com/login-authentication-with-flask/)
-  * [Information on how to keep a session live](https://stackoverflow.com/questions/18662558/flask-login-session-times-out-too-soon)
-  * [Passing Username through Session](https://stackoverflow.com/questions/27611216/how-to-pass-a-variable-between-flask-pages/27611281#27611281)
-  * [Pagination](https://www.youtube.com/watch?v=Lnt6JqtzM7I)
-  * [Hashing Passwords](https://www.youtube.com/watch?v=jJ4awOToB6k)
-
-**Acknowledgements**
-
-I would like to thank my tutors and mentor at the Code Institute for all their help and support during the development of this project.
-
 **Contact**
 
-Created by [Deirdre van der Zee](mailto:deirdrevanderzee@gmail.com).
+Created by [Remco Kes](mailto:rkes@stadgenoot.nl).
