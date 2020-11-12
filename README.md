@@ -2,7 +2,7 @@ Surf Event planner - Milestone Project 3
 ======================================
 **Surf Event Planner- Code Institute Milestone Project 3**
 
-This [project](https://windsurf-event.herokuapp.com//) was designed and developed to be an online recipe cookbook for users. Users can browse and rate recipes listed. Users also have the option to create their own account where they can add, edit and delete their own recipes.
+This [project](https://windsurf-event.herokuapp.com//) was designed and developed to be an online surf event planner for surfers. Users can plan and edit surf event registrations. 
 
 The project needs to be able to demonstrate the use of CRUD functions:
 ```
