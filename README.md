@@ -152,7 +152,7 @@ Following steps were taken to deploy the website:
 - Database and Tables were created in an Atlas MongoDB 
 - Project workspace was created in GitHub. 
 - In the GitHub workspace i make the env.py file to make a secure environment.
-- 
+- ![](static/images/env_py.png)
 
 4. Flask was installed - `sudo pip install flask`.
 3. Setup app.py file and imported flask and os - `from flask import Flask. import os`
