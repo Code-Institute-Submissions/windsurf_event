@@ -86,13 +86,13 @@ It's not possible to delete others event registrations
 
 ![](static/images/edit_event.png)
 
-The admin account has a different navigation bar because the admin has the option to Manage Events
+The admin account has a different navigation bar because an admin has the option to Manage Events
 
 ![](static/images/admin_view.png)
 
-Here you see the admins manage events page
+Here you see the admins manage events page where an admin can add, edit and delete an event.
 
-![](static/images/admin_manage_events.png)
+![](static/images/admin_manage_events2.png)
 
 Only the admin account could add new events
 
