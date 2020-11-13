@@ -20,7 +20,17 @@ Database Schema
 -----------------------------------------
 [MongoDB](https://www.mongodb.com/) was used to create the database for this website and it is hosted by [Atlas](https://www.mongodb.com/cloud/atlas).
 
-Some of the queries were easy to forsee while some evolved over the development of the site. Original plans for the database schema can be [found here](https://github.com/deevdz/milestone-project-3/blob/master/planning/Online%20Cookbook%20Project%20-%20Initial%20Thoughts.pdf).
+In MongoDB i make a database called "windsurf" with 3 collections "events","registrations","users"
+![](static/images/mongodb.png)
+
+In the collection "events" are placed the events
+![](static/images/mongodb_events.png)
+
+In the collection "registration" are placed the event registrations
+![](static/images/mongodb_registrations.png)
+
+In the collection "users" are placed the registered users with their hashed password
+![](static/images/mongodb_users.png)
 
 The final database schema consists of five collections which include recipes, users, allergens, recipeCategory and skillLevel. 
 
