@@ -64,7 +64,7 @@ __Small__ <br>
 __Interactive__ <br>
 ![](static/mokups/interactive.png)
 
-##### Wesite Explanation
+#### Wesite Explanation
 
 Visitors can see the registered events
 
