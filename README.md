@@ -73,7 +73,7 @@ If users what to plan an event the must register (create an account)
 ![](static/images/register.png)
 
 After that you logged in the website.
-If you log out you can click log in to log in again
+The next time you visit the website you can login again.
 
 ![](static/images/login.png)
 
@@ -86,6 +86,17 @@ It's not possible to delete others event registrations
 
 ![](static/images/edit_event.png)
 
+The admin account has a different navigation bar because the admin has the option to Manage Events
+
+![](static/images/admin_view.png)
+
+Here you see the admins manage events page
+
+![](static/images/admin_manage_events.png)
+
+Only the admin account could add new events
+
+![](static/images/admin_add_event.png)
 
 
 Features
