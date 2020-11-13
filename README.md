@@ -31,6 +31,25 @@ Final database schema diagrams can be found in the folder [Database Schema](http
 UX
 -----------------------------------------
 
+##### User Stories
+  * As a user - I am immediately aware what the nature of the site is and its purpose
+  * As a user - I can navigate through the surf event by various means i.e. Navigation dropdown
+  * As a user - I can browse the site without being a logged in user
+  * As a user - I can create a user profile, and log in and out
+  * As a user - I can add, edit and delete my own surf events through my user account
+  * As a user - I receive an error message if I am unable to login or register
+  * As a user - I am able to access the site on mobile or tablet and have a similar experience as a desktop device
+  * As a user - I register for a surf event
+  * As a user - I am able to see all registerd surf event attendees
+  * As a user - I am able to see the details for the registered event
+
+
+##### Strategy
+This website is for planning an surf event. After you plan (create) an events you can read, update and delete your own event.
+Only the admin can add (create) new events.
+ 
+##### Structure
+
 The wireframes for the site:
 
 __Large__ <br>
@@ -45,21 +64,29 @@ __Small__ <br>
 __Interactive__ <br>
 ![](static/mokups/interactive.png)
 
-After browsing through food blogs and recipe archives online the decision was made to use earthy tones. Colour Palette and final logo design can be [found here](https://github.com/deevdz/milestone-project-3/blob/master/planning/wireframes/colour-pallete-and-logo.png). I designed the logo in Adobe Photoshop.
+Visitors can see the registered events
 
-Research was carried out on complimentary fonts and Libre Baskerville and Monsterrat were chosen for the site.
+![](static/images/home.png)
 
-##### User Stories
-  * As a user - I am immediately aware what the nature of the site is and its purpose
-  * As a user - I can navigate through the surf event by various means i.e. Navigation dropdown
-  * As a user - I can browse the site without being a logged in user
-  * As a user - I can create a user profile, and log in and out
-  * As a user - I can add, edit and delete my own surf events through my user account
-  * As a user - I receive an error message if I am unable to login or register
-  * As a user - I am able to access the site on mobile or tablet and have a similar experience as a desktop device
-  * As a user - I register for a surf event
-  * As a user - I am able to see all registerd surf event attendees
-  * As a user - I am able to see the details for the registered event
+If users what to plan an event the must register (create an account)
+
+![](static/images/register.png)
+
+After that you logged in the website.
+If you log out you can click log in to log in again
+
+![](static/images/login.png)
+
+Now you can plan an surf event
+
+![](static/images/plan_event.png)
+
+After you planned an event you could edit or cancel your own event
+It's not possible to delete others event registrations
+
+![](static/images/edit_event.png)
+
+
 
 Features
 -----------------------------------------
