@@ -20,16 +20,16 @@ Database Schema
 -----------------------------------------
 [MongoDB](https://www.mongodb.com/) was used to create the database for this website and it is hosted by [Atlas](https://www.mongodb.com/cloud/atlas).
 
-In MongoDB i make a database called "windsurf" with 3 collections "events","registrations","users"
+In MongoDB i make a database called "windsurf" with 3 collections "events","registrations","users" <br>
 ![](static/images/mongodb.png)
 
-In the collection "events" are placed the events
+In the collection "events" are placed the events <br>
 ![](static/images/mongodb_events.png)
 
-In the collection "registration" are placed the event registrations
+In the collection "registration" are placed the event registrations <br>
 ![](static/images/mongodb_registrations.png)
 
-In the collection "users" are placed the registered users with their hashed password
+In the collection "users" are placed the registered users with their hashed password <br>
 ![](static/images/mongodb_users.png)
 
 The final database schema consists of five collections which include recipes, users, allergens, recipeCategory and skillLevel. 
