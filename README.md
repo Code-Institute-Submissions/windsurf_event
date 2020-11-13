@@ -1,4 +1,4 @@
-Surf Event planner - Milestone Project 3
+# Surf Event planner - Milestone Project 3
 
 This [project](https://windsurf-event.herokuapp.com//) was designed and developed to be an online surf event planner for surfers. Users can create, read, update and delete there registration to one of the surf events.
 
