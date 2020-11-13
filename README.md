@@ -63,6 +63,8 @@ Only the admin can add (create) new events.
  
 ##### Structure
 
+Division page: input field from [Materialize](https://materializecss.com/). Only for admin account
+
 The wireframes for the site:
 
 __Large__ <br>
@@ -113,6 +115,18 @@ Only the admin account could add new events
 
 ![](static/images/admin_add_event.png)
 
+### Skeleton
+* Header: Right Aligned Links from [Materialize](https://materializecss.com/)
+* Menu: with Mobile Collapse Button on medium and small divices from [Materialize](https://materializecss.com/)
+* Footer: from [Materialize](https://materializecss.com/)
+* Base: with header, footer and background image
+* Homepage/All Intentions: Collapsible Popout element from [Materialize](https://materializecss.com/)
+* Register page: Card Panel and Text Input fields from [Materialize](https://materializecss.com/)
+* Log In page: Card Panel and Text Input fields from [Materialize](https://materializecss.com/)
+* Profile page: 2 Card Panels from [Materialize](https://materializecss.com/). Only for registered/logged in users
+* Add Intention page: Card Panel, Text Input fields and Collabsable Select field from [Materialize](https://materializecss.com/). Only for registered/logged in users
+* Manage Divisions page: Card Panel and buttons from [Materialize](https://materializecss.com/). Only for admin account
+* Edit Division page: Card Panel, Text Input field from [Materialize](https://materializecss.com/). Only for admin account
 
 Features
 -----------------------------------------
