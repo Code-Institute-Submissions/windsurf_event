@@ -83,7 +83,7 @@ Now you can plan an surf event
 
 ![](static/images/plan_event.png)
 
-After you planned an event you could edit or cancel your own event
+After you plan an event you could edit or cancel your own event
 It's not possible to delete others event registrations
 
 ![](static/images/edit_event.png)
@@ -208,29 +208,29 @@ Following steps were taken to deploy the website:
 - Project workspace was created in GitHub. 
 - In the GitHub workspace i make the env.py file to make a secure environment.
 - ![](static/images/env_py.png)
+- In GitHub create a requirements.txt file for Heroku can install the necessary dependencies to run the app. The command used to create the file: pip3 freeze --local > requirements.txt
+- In GitHub create a Procfile for Heroku to tell what kind of application it is deploying and how to run. The command used to create the file: echo web: python run.py > Procfile.
+- Create a free Heroku account.
+- Create a new app for the project, selecting a name for the app and choose the closest region.
+- In the Deploy tab choose deployment method GitHub, select your GitHub project.
+- In the Settings tab choose Reveal Config Vars and put in the same values as in your env.py.
+- In the Deploy tab choose Enable Automatic Deploys.
+- Open app.
+- Don't forget to Set Debug to False
 
-4. Flask was installed - `sudo pip install flask`.
-3. Setup app.py file and imported flask and os - `from flask import Flask. import os`
-4. Created an instance of flask - `app = flask(__name__)`
-5. Tested the connection as proof of concept. `CLI - show collections` (prove connection)
-6. Inside the app run() function set the host, ip and debug=true
-7. Create a new Heroku App - unique name and EU Server
-8. In cloud 9 login to Heroku through CLI to confirm existance of app. `CLI: heroku login. CLI: heroku apps`.
-9. Create a git repository in cloud9. CLI: git init. `CLI: git add . CLI: git commit -m "Initial Commit"`
-10. Connect cloud9 to Heroku. Use code found on Heroku. `CLI - $heroku git remote -a deevdz-milestone-3`
-11. Create requirements.txt file - `CLI: sudo pip3 freeze --local > requirements.txt`
-12. Create Procfile - `echo web:python app.py>Procfile`
-13. Add and Commit to Git Repository
-14. Push to Heroku using code supplied by Heroku
-15. `CLI - heroku ps:scale web=1` Command to tell Heroku to run the app
-16. Login to Heroku to add config variables including IP, Port, Mongo_DB and Mongo_URI
-17. Get Flask to talk to MongoDB - `CLI: sudo pip3 install flask-pymongo` `CLI: sudo pip3 install dnspython`
-18. Add extra libraries to app.py - `from flask_pymongo import Pymongo` `from bson.objectid import ObjectID`
-19. Add DB connection code to app.py - edit bashrc file to keep details private.
-20. Test connection to DB again to confirm it's working
-21. Confirm that the cloud9 runner is set to python 3
-22. Connect GitHub repository to Heroku.
-23. Set Debug to False
+If you close the GitHub repository you need the follow steps:
+- touch env.py --. maken your env.py file and fill with this details
+![](static/images/env_py.png)
+- pip3 install -r requirements.txt
+- python3 app.py to start the repository again
+
+### Media
+The images used on this website were obtained from [Pixabay](https://pixabay.com/). The images are used with the direct html on the page.
+
+### Acknowledgements
+* [Slack](https://slack.com/) community
+* [Code Institute course](https://codeinstitute.net/) course
+* My own 20 years IT knowlegdes
 
 **Contact**
 
