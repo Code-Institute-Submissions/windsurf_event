@@ -37,8 +37,6 @@ Only the admin can add (create) new events.
  
 ##### Structure
 
-Division page: input field from [Materialize](https://materializecss.com/). Only for admin account
-
 The wireframes for the site:
 
 __Large__ <br>
