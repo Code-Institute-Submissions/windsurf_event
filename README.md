@@ -30,9 +30,16 @@ Final database schema diagrams can be found in the folder [Database Schema](http
 
 UX
 -----------------------------------------
-Documentation for the initial planning process can be [found here](https://github.com/deevdz/milestone-project-3/blob/master/planning/Online%20Cookbook%20Project%20-%20Initial%20Thoughts.pdf).
 
-The wireframes for this site were generated using Adobe Illustrator. Wireframes for the site can be found in the folder [planning > wireframes](https://github.com/deevdz/milestone-project-3/tree/master/planning/wireframes)
+The wireframes for the site:
+
+![](static/images/mokups/large.png)
+
+![](static/images/mokups/medium.png)
+
+![](static/images/mokups/small.png)
+
+![](static/images/mokups/interactive.png)
 
 After browsing through food blogs and recipe archives online the decision was made to use earthy tones. Colour Palette and final logo design can be [found here](https://github.com/deevdz/milestone-project-3/blob/master/planning/wireframes/colour-pallete-and-logo.png). I designed the logo in Adobe Photoshop.
 
