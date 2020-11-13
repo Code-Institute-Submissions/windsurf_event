@@ -24,12 +24,15 @@ In MongoDB i make a database called "windsurf" with 3 collections "events","regi
 ![](static/images/mongodb.png)
 
 In the collection "events" are placed the events <br>
+
 ![](static/images/mongodb_events.png)
 
 In the collection "registration" are placed the event registrations <br>
+
 ![](static/images/mongodb_registrations.png)
 
 In the collection "users" are placed the registered users with their hashed password <br>
+
 ![](static/images/mongodb_users.png)
 
 The final database schema consists of five collections which include recipes, users, allergens, recipeCategory and skillLevel. 
