@@ -15,32 +15,6 @@ The project needs to be able to demonstrate the use of CRUD functions:
 3.  Update something
 4.  Delete a something
 ```
-
-Database Schema
------------------------------------------
-[MongoDB](https://www.mongodb.com/) was used to create the database for this website and it is hosted by [Atlas](https://www.mongodb.com/cloud/atlas).
-
-In MongoDB i make a database called "windsurf" with 3 collections "events","registrations","users" <br>
-![](static/images/mongodb.png)
-
-In the collection "events" are placed the events <br>
-
-![](static/images/mongodb_events.png)
-
-In the collection "registration" are placed the event registrations <br>
-
-![](static/images/mongodb_registrations.png)
-
-In the collection "users" are placed the registered users with their hashed password <br>
-
-![](static/images/mongodb_users.png)
-
-The final database schema consists of five collections which include recipes, users, allergens, recipeCategory and skillLevel. 
-
-![Final Database Schema](https://github.com/deevdz/milestone-project-3/blob/master/planning/database_schema/database-schema.jpg)
-
-Final database schema diagrams can be found in the folder [Database Schema](https://github.com/deevdz/milestone-project-3/blob/master/planning/database_schema).
-
 UX
 -----------------------------------------
 
@@ -143,6 +117,29 @@ When a visitor has created an account and logged in they are given the option to
 Adding a new surf event is only allowed by admin users.
 
 A user has the option to edit or delete a surf event that they have added to the site only.
+
+Database Schema
+-----------------------------------------
+[MongoDB](https://www.mongodb.com/) was used to create the database for this website and it is hosted by [Atlas](https://www.mongodb.com/cloud/atlas).
+
+In MongoDB i make a database called "windsurf" with 3 collections "events","registrations","users" <br>
+![](static/images/mongodb.png)
+
+In the collection "events" are placed the events <br>
+
+![](static/images/mongodb_events.png)
+
+In the collection "registration" are placed the event registrations <br>
+
+![](static/images/mongodb_registrations.png)
+
+In the collection "users" are placed the registered users with their hashed password <br>
+
+![](static/images/mongodb_users.png)
+
+The database schema:
+
+![](static/images/database_schema.png)
 
 Technologies Used
 -----------------------------------------
