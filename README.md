@@ -33,16 +33,16 @@ UX
 
 The wireframes for the site:
 
-__Large__
+__Large__ <br>
 ![](static/mokups/large.png)
 
-__Medium__
+__Medium__ <br>
 ![](static/mokups/medium.png)
 
-__Small__
+__Small__ <br>
 ![](static/mokups/small.png)
 
-__Interactive__
+__Interactive__ <br>
 ![](static/mokups/interactive.png)
 
 After browsing through food blogs and recipe archives online the decision was made to use earthy tones. Colour Palette and final logo design can be [found here](https://github.com/deevdz/milestone-project-3/blob/master/planning/wireframes/colour-pallete-and-logo.png). I designed the logo in Adobe Photoshop.
